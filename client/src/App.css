@@ -1,0 +1,111 @@
+.App {
+  margin: 0 auto;
+   display: grid;
+   width: 100vw;
+   grid-template-areas: 
+   "a b";
+   grid-template-columns: 2fr 10fr;
+   gap: 10px;
+   height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(151, 216, 148);
+  position: relative;
+}
+
+.start {
+  font-size: 1rem;
+  position: absolute;
+  border: 1px solid black;
+  background: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.save {
+  position: relative;
+}
+
+.pause {
+  display: none;
+  bottom: 0; 
+  margin: 10px;  
+}
+
+.active {
+  display: block;
+}
+
+.start:hover {
+  border: none;
+  background: white;
+}
+
+.game-over {
+  position: absolute;
+  font-size: 40px;
+  margin-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-over h4, 
+.game-over p {
+  margin: 0;
+  padding: 10px;
+}
+
+input {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  outline: none;
+  font-size: 16px;
+  color: #808080;
+  max-width: 100%;
+  width: 100%;
+  font-weight: 200;
+  opacity: 1;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.points {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+.finished-game {
+  position: absolute;
+  top: 60px;
+  font-size: 5rem;
+  color: red;
+  text-decoration: underline;
+}
+
+.record {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.record-box {
+  display: flex;
+  justify-content: space-between;
+}
